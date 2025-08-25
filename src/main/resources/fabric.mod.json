@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "forgecraft",
+	"version": "${version}",
+	"name": "ForgeCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"LPMC2"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/forgecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.forgecraft_fabric.ForgeCraft"
+		],
+		"client": [
+			"com.forgecraft_fabric.ForgeCraftClient"
+		],
+		"fabric-datagen": [
+			"com.forgecraft_fabric.ForgeCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"forgecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
